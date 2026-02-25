@@ -10,9 +10,11 @@
     </p>
     <p>
         I felt like being quirky so I made this site with SvelteKit. Also cause
-        I happened to be learning it already. No other frameworks or anything
-        for styling tho, that's all still good ol' CSS. So uhh... I hope Svelte
-        is allowed on the indie web ^~^'
+        I happened to be learning it already.
+        <a href="https://petrapixel.neocities.org/coding/layout-generator">
+        PetraPixel's template generator</a> was used as a basis for the site
+        layout/style. I wanna do so much with this site, it needs way more
+        personalization (and maybe sparkles :3c), but for now, dis is what i got!!
     </p>
     <p>
         This website is hosted on my own machine! You can see it's specs <a
@@ -20,8 +22,7 @@
         >.
     </p>
     <p>
-        I wanna do so much with this site, it needs way more personalization, 
-        and maybe sparkles... but for now, dis is what i got!!
+        
     </p>
 
     <hr />

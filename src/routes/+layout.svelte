@@ -142,13 +142,13 @@
   <footer>
     <div class="footer-content">
       <div>
-        Looking for me on the booooring modern web? <a href="https://hiijax.com"> Click here ig... </a>
+        <ButtonsExternal></ButtonsExternal>
       </div>
     </div>
     <br>
     <div class="footer-content">
       <div>
-        <ButtonsExternal></ButtonsExternal>
+        Looking for me on the booooring modern web? <a href="https://hiijax.com"> Click here ig... </a>
       </div>
     </div>
   </footer>
