@@ -51,7 +51,7 @@
                 <td>
                     <ul>
                         <li>
-                            <a href="/gallery/nyx">Gallery</a>
+                            <a href="/gallery/breo">Gallery</a>
                         </li>
                     </ul>
                 </td>

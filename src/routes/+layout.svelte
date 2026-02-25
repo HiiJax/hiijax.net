@@ -68,11 +68,15 @@
     </div>
   </header>
 
+  <main id="content">
+    {@render children()}
+  </main>
+
   <!-- =============================================== -->
-  <!-- LEFT SIDEBAR -->
+  <!-- RIGHT SIDEBAR -->
   <!-- =============================================== -->
 
-  <aside class="left-sidebar">
+  <aside class="right-sidebar">
     <div class="sidebar-section">
       <div class="sidebar-title">me, if you even care:</div>
       <img alt="site owner" class="full-width-image" src="/jax_profile.webp">
@@ -130,10 +134,6 @@
       </div>
     </div>
   </aside>
-
-  <main id="content">
-    {@render children()}
-  </main>
 
   <!-- =============================================== -->
   <!-- FOOTER -->
