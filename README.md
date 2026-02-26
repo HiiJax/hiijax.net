@@ -69,6 +69,12 @@ In production, an [Express](https://expressjs.com/) server is used to dynamicall
 
 For development, `/static/` has been added to `.gitignore` so that you can provide the assets there, since they are also served at `/` by `npm run dev`
 
+Mostly a note to myself but the following command is handy to simply use the server's public folder in dev:
+```sh
+sudo mount -t cifs -o username=shareUsername //server/share/hiijax_net/public ./static
+```
+Possibly dangerous with git? :shrug:
+
 ## Credits
 
 - [PetraPixel](https://petrapixel.neocities.org/) for her [layout generator](https://petrapixel.neocities.org/coding/layout-generator)!
