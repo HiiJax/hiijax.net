@@ -2,7 +2,7 @@
   import "./style.css";
   import CalmToggle from "$lib/components/CalmToggle.svelte";
   import LightModeToggle from "$lib/components/LightModeToggle.svelte";
-  import ButtonsExternal from "$lib/components/ButtonsExternal.svelte";
+  import ButtonsMe from "$lib/components/ButtonsMe.svelte";
 
   let { data, children } = $props();
 
@@ -142,7 +142,7 @@
   <footer>
     <div class="footer-content">
       <div>
-        <ButtonsExternal></ButtonsExternal>
+        <ButtonsMe></ButtonsMe>
       </div>
     </div>
     <br>

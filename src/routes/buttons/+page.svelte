@@ -2,7 +2,7 @@
     import ButtonsByJax from '$lib/components/ButtonsByJax.svelte';
     import ButtonsCool from '$lib/components/ButtonsCool.svelte';
     import ButtonsCredits from '$lib/components/ButtonsCredits.svelte';
-    import ButtonsExternal from '$lib/components/ButtonsExternal.svelte';
+    import ButtonsMe from '$lib/components/ButtonsMe.svelte';
     import ButtonsNeighbour from '$lib/components/ButtonsNeighbour.svelte';
 
     let { data } = $props();
@@ -14,7 +14,10 @@
 
 <section>
     <h1>Button Index</h1>
-    <p>Buttons on my site are stored in Svelte components to keep them organized and so they only need to be updated in one spot. Usually ordered newest first.</p>
+    <p>
+        Buttons on my site are stored in Svelte components to keep them organized and so they only need to be updated in one spot. 
+        Usually ordered newest first. Check out <a href="/links">my links</a> for a better presentation!
+    </p>
 
     <h3>ButtonsCredits.svelte (links)</h3>
     <div>Buttons are collected from the site they link to*. Non-link fun/personality buttons from the following sites:</div>
@@ -26,9 +29,9 @@
     <h3>ButtonsCool.svelte (links)</h3>
     <ButtonsCool></ButtonsCool>
 
-    <h3>ButtonsExternal.svelte (links)</h3>
+    <h3>ButtonsMe.svelte (links)</h3>
     <div>*these ones are not collected from the site they link to or ordered newest first.</div>
-    <ButtonsExternal></ButtonsExternal>
+    <ButtonsMe></ButtonsMe>
 
     <h3>ButtonsNeighbour.svelte (links)</h3>
     <ButtonsNeighbour></ButtonsNeighbour>
