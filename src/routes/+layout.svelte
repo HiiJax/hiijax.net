@@ -5,16 +5,6 @@
   import ButtonsMe from "$lib/components/ButtonsMe.svelte";
 
   let { data, children } = $props();
-
-  // Template generated with petrapixel's layout generator.
-  // (Please do not remove this credit.)
-  console.log(
-    "%cTemplate generated with petrapixel's layout generator: https://petrapixel.neocities.org/coding/layout-generator",
-    "font-size: 14pt; color: #922a45; background: #ffd3ef",
-  );
-  console.log(
-    "It was also butchered by Jax, so take what you see with a grain of salt. What you see is NOT what you'll get lol",
-  );
 </script>
 
 <svelte:head>
@@ -25,6 +15,17 @@
   <meta name="apple-mobile-web-app-title" content="hiijax.net" />
   <link rel="manifest" href="/site.webmanifest" />
   <script src="/oneko.js" defer></script>
+  <script>
+    // Template generated with petrapixel's layout generator.
+    // (Please do not remove this credit.)
+    console.log(
+      "%cTemplate generated with petrapixel's layout generator: https://petrapixel.neocities.org/coding/layout-generator",
+      "font-size: 14pt; color: #922a45; background: #ffd3ef",
+    );
+    console.log(
+      "It was also butchered by Jax, so take what you see with a grain of salt. What you see is NOT what you'll get lol",
+    );
+  </script>
 </svelte:head>
 
 <a href="#content" id="skip-to-content-link">Skip to content</a>
