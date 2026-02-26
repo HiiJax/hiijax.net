@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Noto-Sans';
+  src: url('/fonts/notosans.ttf');
+}
+
+@font-face {
+  font-family: 'Cascadia-Mono';
+  src: url('/fonts/cascadiamono.ttf');
+}
+
 /* -------------------------------------------------------- */
 /* VARIABLES */
 /* -------------------------------------------------------- */
@@ -17,17 +27,21 @@
 
   /* Text: */
   --font: Georgia, serif;
-  --heading-font: Verdana, sans-serif;
-  --font-size: 16px;
+  --heading-font: 'Noto-Sans', sans-serif;
+  --font-size: 18px;
 
   /* Other Settings: */
   --margin: 10px;
   --padding: 20px;
   --border: 2px solid #bf87ff;
   --round-borders: 0px;
-  --sidebar-width: 200px;
+  --sidebar-width: 240px;
   
   scrollbar-gutter: stable;
+}
+
+code {
+  font-family: 'Cascadia-Mono';
 }
 
 /* -------------------------------------------------------- */
@@ -42,10 +56,10 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  /* display: flex; */
   min-height: 100vh;
   font-size: var(--font-size);
   margin: 0;
-  padding: var(--margin);
   color: var(--text-color);
   font-family: var(--font);
   line-height: 1.2;
@@ -106,12 +120,96 @@ a:focus {
 /* LAYOUT */
 /* -------------------------------------------------------- */
 
+
+/*
+.bigger-layout {
+  width: 100%;
+  display: grid;
+  grid-template: 
+    "breo-floatie layout nyx-floatie" auto;
+}
+
+.nyx-floatie {
+  width: 90%;
+  animation: float2 16s ease-in-out infinite;
+}
+
+.breo-floatie {
+  width: 90%;
+  animation: float 15s ease-in-out infinite;
+}
+
+.floatie-holder{
+  display: flex;
+  top: 0;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1200px) {
+  .nyx-floatie {
+    display: none;
+  }
+  .breo-floatie {
+    display: none;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes float2 {
+  0% {
+    transform: translateY(30px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+
+
+*/
+
+
 .layout {
-  width: 1000px;
+  width: 1255px;
   display: grid;
   grid-gap: var(--margin);
-  grid-template: "announcement announcement" auto "header header" auto "main rightSidebar" auto "footer footer" auto / auto var(--sidebar-width);
+  grid-template: 
+    "announcement announcement" auto 
+    "header header" auto 
+    "main rightSidebar" auto 
+    "footer footer" auto / auto var(--sidebar-width);
   /* Confused by the grid? Check out my tutorial: https://petrapixel.neocities.org/coding/positioning-tutorial#grid */
+  position: relative;
+  z-index: 1;
+  padding-bottom: var(--margin);
+}
+
+@media (max-width: 1600px) {
+  .layout {
+    width: 1000px;
+    padding-inline: var(--margin);
+  }
+  :root {
+    --sidebar-width: 200px;
+  }
 }
 
 main {
@@ -129,6 +227,23 @@ main {
 
 header {
   grid-area: header;
+  display: grid;
+}
+
+.header-gloss {
+  display: grid;
+  border-radius: 100px;
+  background: -moz-linear-gradient(top, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.2) 100%); /* FF3.6+ */
+  background: linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.2) 100%); /* W3C */
+  height: 60%;
+  grid-template-columns: var(--sidebar-width) 1fr var(--sidebar-width);
+  align-items: center;
+  z-index: 100;
+  grid-row: 1;
+  grid-column: 1;
+  box-shadow: inset 0px 2px 1px rgba(255, 255, 255, 0.7);
+    border-bottom-right-radius: 100px 40px;
+    border-bottom-left-radius: 100px 40px;
 }
 
 .header-inner {
@@ -140,6 +255,8 @@ header {
   background: var(--content-background-color);
   grid-template-columns: var(--sidebar-width) 1fr var(--sidebar-width);
   align-items: center;
+  grid-row: 1;
+  grid-column: 1;
 }
 
 .header-logo-holder{
