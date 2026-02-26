@@ -1,4 +1,4 @@
-# hiijax.net
+# [hiijax.net](https://hiijax.net/)
 
 Jax's homepage on the net.
 

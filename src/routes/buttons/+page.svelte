@@ -17,7 +17,7 @@
     <p>Buttons on my site are stored in Svelte components to keep them organized and so they only need to be updated in one spot. Usually ordered newest first.</p>
 
     <h3>ButtonsCredits.svelte (links)</h3>
-    <div>Buttons collected from the site they link to*. Non-link fun/personality buttons from the following sites:</div>
+    <div>Buttons are collected from the site they link to*. Non-link fun/personality buttons from the following sites:</div>
     <ButtonsCredits></ButtonsCredits>
 
     <h3>ButtonsByJax.svelte (non-links)</h3>
