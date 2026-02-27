@@ -1,7 +1,8 @@
 <script>
   import "./style.css";
   import CalmToggle from "$lib/components/CalmToggle.svelte";
-  import LightModeToggle from "$lib/components/LightModeToggle.svelte";
+  import LightMode from "$lib/components/LightMode.svelte";
+  import DarkMode from "$lib/components/DarkMode.svelte";
   import ButtonsMe from "$lib/components/ButtonsMe.svelte";
 
   let { data, children } = $props();
@@ -73,7 +74,8 @@
 
         <div class="header-controls">
           <CalmToggle><code>Calmer Background</code></CalmToggle>
-          <LightModeToggle><code>Light Mode Toggle</code></LightModeToggle>
+          <LightMode><code>Light</code></LightMode>
+          <DarkMode><code>Dark</code></DarkMode>
         </div>
       </div>
     </header>

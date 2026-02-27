@@ -78,6 +78,39 @@ body {
   background-attachment: fixed;
 }
 
+@media (prefers-color-scheme: light) {
+  body {
+    --background-color: #f5f5f5;
+    --content-background-color: #ddadff;
+    --sidebar-background-color: #ddadff;
+
+    --text-color: #000000;
+    --sidebar-text-color: #000000;
+    --link-color: #7a3cff;
+    --link-color-hover: #0099cc;
+
+    --border: 2px solid #6a00c7;
+
+    background-image: url("/background-light.webp");
+  }
+
+}
+
+body.dark-mode {
+    --background-color: #000000;
+    --content-background-color: #271e29ff;
+    --sidebar-background-color: #271e29ff;
+    
+    --text-color: #efefef;
+    --sidebar-text-color: #efefef;
+    --link-color: #ffc926;
+    --link-color-hover: #2ecdf4;
+    
+    --border: 2px solid #bf87ff;
+    
+    background-image: url("/background.webp");
+  }
+
 body.light-mode {
   --background-color: #f5f5f5;
   --content-background-color: #ddadff;
@@ -91,6 +124,13 @@ body.light-mode {
   --border: 2px solid #6a00c7;
 
   background-image: url("/background-light.webp");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    background: var(--background-color);
+    background-image: null;
+  }
 }
 
 body.calm {
