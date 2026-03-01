@@ -10,7 +10,7 @@ app.get('/healthcheck', (req, res) => {
 });
 
 // dynamically serve assets
-app.use(express.static('public', {redirect: false}));
+app.use(express.static('public', {redirect: false, dotfiles: 'allow'}));
 
 // let SvelteKit handle everything else, including serving prerendered pages and static assets
 app.use(handler);
