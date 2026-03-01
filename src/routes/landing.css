@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/fonts/notosans.ttf');
+}
+
+@font-face {
+  font-family: 'Noto Serif';
+  src: url('/fonts/notoserif.ttf');
+}
+
+@font-face {
+  font-family: 'Cascadia Mono';
+  src: url('/fonts/cascadiamono.ttf');
+}
+
+@font-face {
+  font-family: 'DejaVu Serif';
+  src: url('/fonts/dejavuserif.ttf');
+}
+
+/* -------------------------------------------------------- */
+/* VARIABLES */
+/* -------------------------------------------------------- */
+
+/* Variables are used like this: var(--text-color) */
+:root {
+  /* Background Colors: */
+  --background-color: #000000;
+  --content-background-color: #271e29ff;
+  --sidebar-background-color: #271e29ff;
+
+  /* Text Colors: */
+  --text-color: #efefef;
+  --sidebar-text-color: #efefef;
+  --link-color: #ffc926;
+  --link-color-hover: #2ecdf4;
+
+  /* Text: */
+  --font: 'Noto Serif', serif;
+  --heading-font: 'Noto Sans', sans-serif;
+  --font-size: 18px;
+
+  /* Other Settings: */
+  --margin: 10px;
+  --padding: 20px;
+  --border: 2px solid #bf87ff;
+  --round-borders: 0px;
+  --sidebar-width: 240px;
+  
+  scrollbar-gutter: stable;
+}
+
+body {
+  
+  display: grid;
+  background-color: var(--background-color);
+}
+
+.button-link {
+  width: 100%;
+  color: var(--text-color);
+  background-color: #AA5EDD;
+  border: 2px solid var(--text-color);
+  padding: var(--padding);
+}
+
+.card {
+  padding: var(--padding);
+  width: 600px;
+  background-color: var(--content-background-color);
+  color: var(--text-color);
+}
+
+.logo-holder {
+  width: 30%;
+}

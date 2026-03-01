@@ -1,5 +1,4 @@
 <svelte:head>
-    <!-- Change your site title: (It is shown in the tab) -->
     <title>HiiJax's Tech</title>
 </svelte:head>
 
