@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-    <title>HiiJax's Art Gallery - Art of {data.image.character} by {data.image.artist}</title>
+    <title>HiiJax's Gallery - Art of {data.image.character} by {data.image.artist}</title>
     <meta property="og:title" content="Art of {data.image.character} by {data.image.artist}" />
     <meta property="og:description" content="HiiJax's Art Gallery" />
     <meta property="og:type" content="image" />

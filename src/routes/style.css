@@ -1,31 +1,21 @@
 @font-face {
-  font-family: 'Noto Sans';
-  src: url('/fonts/notosans.ttf');
-}
-
-@font-face {
   font-family: 'Noto Serif';
   src: url('/fonts/notoserif.ttf');
 }
 
 @font-face {
-  font-family: 'Cascadia Mono';
-  src: url('/fonts/cascadiamono.ttf');
-}
-
-@font-face {
-  font-family: 'DejaVu Serif';
-  src: url('/fonts/dejavuserif.ttf');
-}
-
-@font-face {
-  font-family: 'Ivy Presto Headline';
-  src: url('/fonts/ivypresto.ttf');
-}
-
-@font-face {
   font-family: 'KH Interference';
   src: url('/fonts/khinterference.otf');
+}
+
+@font-face {
+  font-family: 'PP Fraktion Sans';
+  src: url('/fonts/ppfraktionsans.otf');
+}
+
+@font-face {
+  font-family: 'PP Fraktion Mono';
+  src: url('/fonts/ppfraktionmono.otf');
 }
 
 
@@ -48,7 +38,8 @@
 
   /* Text: */
   --font: 'Noto Serif', serif;
-  --heading-font: 'Noto Sans', sans-serif;
+  --heading-font: 'PP Fraktion Sans', sans-serif;
+  --mono-font: 'PP Fraktion Mono', monospace;
   --font-size: 18px;
 
   /* Other Settings: */
@@ -64,13 +55,14 @@
 }
 
 code {
-  font-family: 'Cascadia Mono', monospace;
+  font-family: var(--mono-font);
 }
 
 /* -------------------------------------------------------- */
 /* LANDING PAGE */
 /* -------------------------------------------------------- */
 
+/*
 .landing {
   display: flex;
   justify-content: center;
@@ -97,6 +89,7 @@ code {
 .logo-holder {
   width: 20%;
 }
+*/
 
 /* -------------------------------------------------------- */
 /* BASICS */
@@ -250,6 +243,10 @@ body:has(.floaty-checkbox:checked) .nyx-floatie {
   text-align: center;
 }
 
+.toggle:hover {
+  background-color: #bf87ff;
+}
+
 .toggle input:checked + .header-toggle {
   background-color: #AA5EDD;
 }
@@ -347,6 +344,10 @@ header {
   display: grid;
 }
 
+.header-title {
+  font-family: 'PP Fraktion Sans';
+}
+
 .header-gloss {
   display: grid;
   border-radius: 100px;
@@ -365,7 +366,6 @@ header {
 
 .header-inner {
   display: grid;
-
   font-size: 1.2em;
   box-shadow: var(--shadow);
   border-radius: var(--round-borders);
@@ -387,13 +387,24 @@ header {
 .header-link {
   max-height: 60px;
   height: 75%;
+  font-family: var(--mono-font);
+  text-decoration: none;
 }
 
 .header-logo {
   height: 100%;
+  transition: ease-in-out 0.1s;
+}
+
+.header-logo:hover {
+  scale: 1.1;
+  transition: ease-in-out 0.1s;
 }
 
 .header-content {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   padding-block: var(--padding);
 }
 
@@ -483,7 +494,7 @@ aside {
 }
 
 .site-button textarea {
-  font-family: monospace;
+  font-family: var(--mono-font);
   font-size: 0.7em;
 }
 
@@ -573,6 +584,7 @@ header nav ul {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  justify-content: center;
 }
 
 header nav ul li {
@@ -608,7 +620,6 @@ header nav ul li:focus-within ul {
 
 header nav ul li strong {
   color: var(--link-color);
-  text-decoration: underline;
   font-weight: normal;
 }
 
@@ -918,4 +929,41 @@ td {
   width: auto;
   height: auto;
   max-width: 100%;
+}
+
+.social-icon {
+  height: var(--font-size);
+  vertical-align: middle;
+}
+
+dialog {
+  background-color: var(--content-background-color);
+  color: var(--text-color);
+	max-width: 32em;
+	border: none;
+	padding: 0;
+  box-shadow: var(--shadow);
+}
+
+dialog > div {
+	padding: 1em;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  display: inline;
+  width: auto;
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+.link-button:hover,
+.link-button:focus {
+  color: var(--link-color-hover);
+  text-decoration: none;
 }

@@ -5,7 +5,7 @@
 <section>
     <h1>Introduction</h1>
     <p>
-        Hii, I'm Jax! I am a furry on the interwebs! You can see me around as my
+        Hii, I'm Jax! I'm a furry on the Internet! You can see me around as my
         sonas, Breo, an umbreon-protogen dude, or Nyx, a pretty fluffy dragon.
     </p>
     <p>
@@ -83,7 +83,7 @@
         I <i>swear</i> they don't <i>all</i> revolve around being a furry...
     </p>
     <p>
-        I'm very lightly into programming. It's something I'd consider persuing as a 
+        I'm a little into programming. I'd definitely persue it as a 
         career if the opportunity arose. I know a bit of Java from 
         <a href="https://github.com/HiiJax/Bad-Horse-Fix">Minecraft modding</a>, 
         and basic web dev stuff from making this site and some others.
@@ -97,10 +97,10 @@
         it in rust</a>, so that's good for motivation too.
     </p>
     <p>
-        Something else I do to try to make something out of myself, is create in 
+        Something else I do to try to make something of myself, is create in 
         <a href="https://jinxxy.com/HiiJax" style="color: white; text-decoration: none; text-shadow: rgb(7, 188, 204) 2px 2px 0px, rgb(230, 1, 192) 3px 3px 0px, rgb(233, 1, 154) 4px 4px 0px;">3D</a>!
-        I'm still improving here too, but I'm feeling more and more confident, as I
-        create more and more content for the VRChat furry market! I'm so extemely
+        I'm still improving here too, but I keep feeling more confident, as I
+        create more content for the VRChat furry market! I'm so extemely
         grateful for the support I've gotten in this regard, it's really kept me going &lt;3
     </p>
     <p>

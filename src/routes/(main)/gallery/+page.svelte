@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-    <title>HiiJax's Art Gallery</title>
+    <title>HiiJax's Gallery</title>
 </svelte:head>
 
 {#each data.previews as { slug, character, alt, artist }}

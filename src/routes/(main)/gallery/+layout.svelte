@@ -3,6 +3,7 @@
 </script>
 
 <section>
+    <h1>Gallery</h1>
     <p>All of these were commissioned by me or gifted to me. Credits are shown when hovering or by clicking on the image.</p>
     <p>
         <a href="/gallery">[ALL]</a>

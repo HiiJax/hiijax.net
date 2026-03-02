@@ -19,7 +19,7 @@
       "It was also butchered by Jax, so take what you see with a grain of salt. What you see is NOT what you'll get lol",
     );
   </script>
-  <script src="/oneko.js" defer></script>
+  <script src="/pmdneko.js" defer></script>
 </svelte:head>
 
     <!-- =============================================== -->
@@ -34,21 +34,22 @@
           >
         </div>
         <div class="header-content">
-          <div class="header-title">Welcome to HiiJax's Homepage!!</div>
+          <div class="header-title">WELCOME! CHOOSE A PAGE:</div>
 
           <!-- NAVIGATION -->
           <nav>
             <ul>
-              <li><a href="/home">Home</a></li>
-              <li><a href="/guestbook">Guestbook</a></li>
-              <li><a href="/gallery">Art Gallery</a></li>
-              <li><a href="/links">Links</a></li>
-              <li>
-                <strong>More stuffs!</strong>
+              <li><a class="header-link" href="/links">[LINKS]</a></li>
+              <li><a class="header-link" href="/gallery">[GALLERY]</a></li>
+              <li><a class="header-link" href="/shop">[SHOP]</a></li>
+              <li><a class="header-link" href="/socials">[SOCIALS]</a></li>
+              <li class="header-link">
+                <strong>[MORE &darr;]</strong>
                 <ul>
-                  <li><a href="/my-tech">My Tech</a></li>
-                  <li><a href="/buttons">Buttons</a></li>
-                  <li><a href="/music">Music</a></li>
+                  <li><a class="header-link" href="/guestbook">GUESTBOOK</a></li>
+                  <li><a class="header-link" href="/my-tech">MY TECH</a></li>
+                  <li><a class="header-link" href="/buttons">BUTTONS</a></li>
+                  <li><a class="header-link" href="/music">MUSIC</a></li>
                 </ul>
               </li>
             </ul>
@@ -103,7 +104,7 @@
     </div>-->
       <hr />
       <div class="sidebar-section">
-        <div class="sidebar-title">buttonsss</div>
+        <div class="sidebar-title">buttonsss:</div>
         <a href="/buttons">
           <!-- svelte-ignore a11y_distracting_elements -->
           <marquee>
