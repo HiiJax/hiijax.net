@@ -229,6 +229,7 @@ body:has(.floaty-checkbox:checked) .nyx-floatie {
   user-select: none;
   font-family: 'KH Interference', sans-serif;
   font-size: 0.8rem;
+  transition: ease-in-out 0.2s;
 }
 
 .toggle input {
@@ -244,7 +245,8 @@ body:has(.floaty-checkbox:checked) .nyx-floatie {
 }
 
 .toggle:hover {
-  background-color: #bf87ff;
+  scale: 1.1;
+  transition: ease-in-out 0.2s;
 }
 
 .toggle input:checked + .header-toggle {

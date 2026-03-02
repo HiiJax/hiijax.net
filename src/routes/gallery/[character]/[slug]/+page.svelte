@@ -13,6 +13,8 @@
     <meta property="og:image" content="https://hiijax.net/gallery/{data.image.character}/{data.image.slug}.webp" />
 </svelte:head>
 
+<a href="/gallery/{data.previousImage.character}/{data.previousImage.slug}" data-sveltekit-noscroll>&lAarr; Previous</a>
+<a href="/gallery/{data.nextImage.character}/{data.nextImage.slug}" data-sveltekit-noscroll>Next &rAarr;</a>
 <GalleryImage gallery=gallery character={data.image.character} slug={data.image.slug} alt={data.image.alt}></GalleryImage>
 <div style="text-transform: capitalize;">Character: {data.image.character}</div>
 <div>Artist: {data.image.artist}</div>

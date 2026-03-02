@@ -14,6 +14,6 @@
 
 <img width="100%" style="object-fit: cover;" src="/{gallery}/{character}/{slug}.{format}" alt="{alt}" />
 
-<button aria-label="Toggle .avif/.webp" onclick={toggle}>
-    <code>Toggle .avif/.webp (Currently .{format})</code>
+<button aria-label="Toggle format" onclick={toggle}>
+    <code>Toggle format (Currently .{format})</code>
 </button>

@@ -37,9 +37,9 @@
     <ButtonsNeighbour></ButtonsNeighbour>
 
     <h3>All Buttons (non-links)</h3>
-    <div>All the buttons are stored as /buttons/[button].gif (unless the owner requests hotlinking) and are dumped here in alphabetical order, and the sidebar marquee in random order.</div>
+    <div>All the buttons are stored as /button/[button].gif (unless the owner requests hotlinking) and are dumped here in alphabetical order, and the sidebar marquee in random order.</div>
     {#each data.buttons as button}
-        <img src={`/buttons/${button}`} alt={button} />
+        <img src={`/button/${button}`} alt={button} />
     {/each}
 
 </section>
