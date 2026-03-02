@@ -1,5 +1,4 @@
 <script>
-  import "./main.css";
   import CalmToggle from "$lib/components/CalmToggle.svelte";
   import LightMode from "$lib/components/LightMode.svelte";
   import DarkMode from "$lib/components/DarkMode.svelte";
@@ -23,16 +22,6 @@
   <script src="/oneko.js" defer></script>
 </svelte:head>
 
-<a href="#content" id="skip-to-content-link">Skip to content</a>
-<div class="background-layout"></div>
-<!--
-<div class="bigger-layout">
-  
-  <div class="floatie-holder">
-    <img class="nyx-floatie" src="nyxtrans.webp" />
-  </div>
-  -->
-  <div class="layout">
     <!-- =============================================== -->
     <!-- HEADER -->
     <!-- =============================================== -->
@@ -50,7 +39,7 @@
           <!-- NAVIGATION -->
           <nav>
             <ul>
-              <li><a href="/">Home</a></li>
+              <li><a href="/home">Home</a></li>
               <li><a href="/guestbook">Guestbook</a></li>
               <li><a href="/gallery">Art Gallery</a></li>
               <li><a href="/links">Links</a></li>
@@ -67,9 +56,10 @@
         </div>
 
         <div class="header-controls">
-          <CalmToggle><code>Calmer Background</code></CalmToggle>
-          <LightMode><code>Light</code></LightMode>
-          <DarkMode><code>Dark</code></DarkMode>
+          <label class="toggle">
+            <input type="checkbox" class="floaty-checkbox" />
+            <span class="header-toggle">Hide Floaty Breos</span>
+          </label>
         </div>
       </div>
     </header>
@@ -103,6 +93,7 @@
         <script
           type="text/javascript"
           src="https://www.counter12.com/ad.js?id=wbBAYC70aCDddAC9"
+          defer
         >
         </script>
       </div>
@@ -159,11 +150,4 @@
         </div>
       </div>
     </footer>
-  </div>
-  <!--
-  <div class="floatie-holder">
-    <img class="breo-floatie" src="breotrans.webp" />
-  </div>
   
-</div>
--->

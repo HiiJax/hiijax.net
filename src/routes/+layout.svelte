@@ -1,5 +1,5 @@
 <script>
-  import "./landing.css";
+  import "./style.css";
 
   let { children } = $props();
 </script>
@@ -14,4 +14,21 @@
   <title>HiiJax - VRC Creator & Internet Furry</title>
 </svelte:head>
 
+<a href="#content" id="skip-to-content-link">Skip to content</a>
+<div class="background-layout"></div>
+
+<div class="bigger-layout">
+  <div class="floatie-holder">
+    <img class="nyx-floatie" src="nyxtrans.webp" />
+  </div>
+
+  <div class="layout">
+
 {@render children()}
+
+</div>
+
+  <div class="floatie-holder">
+    <img class="breo-floatie" src="breotrans.webp" />
+  </div>
+</div>
