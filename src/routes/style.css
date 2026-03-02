@@ -110,24 +110,30 @@ body {
   color: var(--text-color);
   font-family: var(--font);
   line-height: 1.2;
-  background: #5f2a9b;
+  background: var(--background-color);
   background: linear-gradient(23deg, rgba(95, 42, 155, 1) 0%, rgba(195, 87, 199, 1) 54%, rgba(237, 221, 83, 1) 100%);
   background-attachment: fixed;
 }
 
-/*
+
 @media (prefers-color-scheme: light) {
   body {
-    --content-background-color: #ddadff;
-    --sidebar-background-color: #ddadff;
+    --background-color: #e173ff;
+    --content-background-color: #eacdff;
+    --sidebar-background-color: #eacdff;
 
     --text-color: #000000;
     --sidebar-text-color: #000000;
     --link-color: #7a3cff;
     --link-color-hover: #0099cc;
-  }
 
+    --shadow: 0px 0 5px #00000078;
+    background: linear-gradient(23deg,rgba(225, 115, 255, 1) 0%, rgba(149, 138, 255, 1) 50%, rgba(130, 188, 255, 1) 100%);
+    background-attachment: fixed;
+  }
 }
+
+/*
 
 body.dark-mode {
     --content-background-color: #271e29ff;
@@ -840,6 +846,7 @@ main h6 {
   .layout {
     width: 100%;
     grid-template: "header" auto  "main" auto "rightSidebar" auto "footer" auto / 1fr;
+    padding-top: var(--margin);
     /* Confused by the grid? Check out my tutorial: https://petrapixel.neocities.org/coding/positioning-tutorial#grid */
   }
 
