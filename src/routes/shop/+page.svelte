@@ -1,5 +1,10 @@
 <svelte:head>
   <title>HiiJax's Shop</title>
+  <meta property="og:title" content="HiiJax's Shop" />
+  <meta property="og:url" content="https://hiijax.net/shop" />
+  <meta property="og:image:secure_url" content="https://hiijax.net/jax_profile.jpg" />
+  <meta property="og:image" content="https://hiijax.net/jax_profile.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
 </svelte:head>
 
 <h1>Shop</h1>

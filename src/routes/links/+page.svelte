@@ -5,7 +5,12 @@
 
 </script>
 <svelte:head>
-    <title>HiiJax's Links</title>
+  <title>HiiJax's Links</title>
+  <meta property="og:title" content="HiiJax's Links" />
+  <meta property="og:url" content="https://hiijax.net/links" />
+  <meta property="og:image:secure_url" content="https://hiijax.net/jax_profile.jpg" />
+  <meta property="og:image" content="https://hiijax.net/jax_profile.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
 </svelte:head>
 
 <section>

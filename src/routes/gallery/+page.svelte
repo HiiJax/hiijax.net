@@ -3,7 +3,12 @@
 </script>
 
 <svelte:head>
-    <title>HiiJax's Gallery</title>
+  <title>HiiJax's Gallery</title>
+  <meta property="og:title" content="HiiJax's Gallery" />
+  <meta property="og:url" content="https://hiijax.net/gallery" />
+  <meta property="og:image:secure_url" content="https://hiijax.net/jax_profile.jpg" />
+  <meta property="og:image" content="https://hiijax.net/jax_profile.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
 </svelte:head>
 
 {#each data.previews as { slug, character, alt, artist }}

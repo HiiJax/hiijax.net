@@ -8,10 +8,8 @@
   <title>HiiJax's Gallery - Art of {data.image.character} by {data.image.artist}</title>
 
   <!-- og tags -->
-  <meta property="og:site_name" content="HiiJax's Gallery" />
   <meta property="og:title" content="Art of {data.image.character} by {data.image.artist}" />
-  <meta property="og:description" content="Art of {data.image.character} by {data.image.artist}" />
-  <meta property="og:type" content="website" />
+  <meta property="og:description" content="HiiJax's Gallery" />
   <meta property="og:url" content="https://hiijax.net/gallery/{data.image.character}/{data.image.slug}" />
   <meta property="og:image:secure_url" content="https://hiijax.net/gallery/{data.image.character}/{data.image.slug}.jpg" />
   <meta property="og:image" content="https://hiijax.net/gallery/{data.image.character}/{data.image.slug}.jpg" />

@@ -3,7 +3,13 @@
 
 </script>
 <svelte:head>
-    <title>HiiJax's Homepage</title>
+  <title>HiiJax's Homepage</title>
+  <meta property="og:title" content="HiiJax's Homepage" />
+  <meta property="og:description" content="Hii, I'm Jax! I make VRChat assets for furries and more. Surf my indie website!" />
+  <meta property="og:url" content="https://hiijax.net/" />
+  <meta property="og:image:secure_url" content="https://hiijax.net/jax_profile.jpg" />
+  <meta property="og:image" content="https://hiijax.net/jax_profile.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
 </svelte:head>
 
 <section>

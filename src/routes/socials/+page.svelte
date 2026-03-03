@@ -6,6 +6,11 @@
 
 <svelte:head>
   <title>HiiJax's Socials</title>
+  <meta property="og:title" content="HiiJax's Socials" />
+  <meta property="og:url" content="https://hiijax.net/socials" />
+  <meta property="og:image:secure_url" content="https://hiijax.net/jax_profile.jpg" />
+  <meta property="og:image" content="https://hiijax.net/jax_profile.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
 </svelte:head>
 
 <h1>Socials.</h1>

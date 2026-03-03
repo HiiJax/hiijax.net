@@ -1,5 +1,10 @@
 <svelte:head>
-    <title>HiiJax's (Favourite) Music</title>
+  <title>HiiJax's (Favourite) Music</title>
+  <meta property="og:title" content="HiiJax's (Favourite) Music" />
+  <meta property="og:url" content="https://hiijax.net/music" />
+  <meta property="og:image:secure_url" content="https://hiijax.net/jax_profile.jpg" />
+  <meta property="og:image" content="https://hiijax.net/jax_profile.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
 </svelte:head>
 
 <h1>music!</h1>

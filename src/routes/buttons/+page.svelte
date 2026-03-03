@@ -9,7 +9,12 @@
 </script>
 
 <svelte:head>
-    <title>HiiJax's Button Index</title>
+  <title>HiiJax's Button Index</title>
+  <meta property="og:title" content="HiiJax's Button Index" />
+  <meta property="og:url" content="https://hiijax.net/buttons" />
+  <meta property="og:image:secure_url" content="https://hiijax.net/buttons/hiijax.gif" />
+  <meta property="og:image" content="https://hiijax.net/buttons/hiijax.gif" />
+  <meta property="og:image:type" content="image/gif" />
 </svelte:head>
 
 <section>
