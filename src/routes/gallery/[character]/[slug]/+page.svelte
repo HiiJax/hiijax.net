@@ -16,6 +16,7 @@
 <a href="/gallery/{data.previousImage.character}/{data.previousImage.slug}" data-sveltekit-noscroll>&lAarr; Previous</a>
 <a href="/gallery/{data.nextImage.character}/{data.nextImage.slug}" data-sveltekit-noscroll>Next &rAarr;</a>
 <GalleryImage gallery=gallery character={data.image.character} slug={data.image.slug} alt={data.image.alt}></GalleryImage>
+<br><br>
 <div style="text-transform: capitalize;">Character: {data.image.character}</div>
 <div>Artist: {data.image.artist}</div>
 <div>Link: <a href="{data.image.link}">{data.image.link}</a></div>

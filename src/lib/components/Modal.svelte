@@ -16,7 +16,8 @@
 >
 	<div>
 		{@render children?.()}
+		<br>
 		<!-- svelte-ignore a11y_autofocus -->
-		<button autofocus onclick={() => dialog.close()}>close</button>
+		<button class="header-button" autofocus onclick={() => dialog.close()}>close</button>
 	</div>
 </dialog>

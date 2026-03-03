@@ -7,7 +7,7 @@
 </svelte:head>
 
 {#each data.previews as { slug, character, alt, artist }}
-    <a title="Artist: {artist}" href="/gallery/{character}/{slug}">
+    <a title="Artist: {artist}" href="/gallery/{character}/{slug}" data-sveltekit-noscroll>
         <img width="240" height="240" style="object-fit: cover;" src="/thumb/{character}/{slug}.webp" {alt} />
     </a>
 {/each}

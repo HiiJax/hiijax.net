@@ -58,6 +58,26 @@ code {
   font-family: var(--mono-font);
 }
 
+button {
+  font-family: 'KH Interference';
+  border: var(--border);
+  cursor: pointer;
+  color: currentColor;
+  font-family: 'KH Interference', sans-serif;
+  font-size: 0.8rem;
+  background: var(--content-background-color);
+  padding: 10px 15px;
+  border: 2px solid var(--text-color);
+  white-space: nowrap; 
+  text-align: center;
+  width: 100%;
+}
+
+button:active, a:active, span:active {
+  scale: 0.95;
+}
+
+
 /* -------------------------------------------------------- */
 /* LANDING PAGE */
 /* -------------------------------------------------------- */
@@ -235,7 +255,6 @@ body:has(.floaty-checkbox:checked) .nyx-floatie {
   user-select: none;
   font-family: 'KH Interference', sans-serif;
   font-size: 0.8rem;
-  transition: ease-in-out 0.2s;
 }
 
 .toggle input {
@@ -248,11 +267,6 @@ body:has(.floaty-checkbox:checked) .nyx-floatie {
   border: 2px solid var(--text-color);
   white-space: nowrap; 
   text-align: center;
-}
-
-.toggle:hover {
-  scale: 1.1;
-  transition: ease-in-out 0.2s;
 }
 
 .toggle input:checked + .header-toggle {
@@ -416,9 +430,6 @@ header {
   padding-block: var(--padding);
 }
 
-button {
-  width: 100%;
-}
 
 .announcement {
   font-size: 1.2em;

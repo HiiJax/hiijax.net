@@ -1,3 +1,4 @@
+<a href="https://deerz.one/" target="_blank"><img src="/button/deerzone.gif" alt="ida deerz"></a>
 <a href="https://beeps.website/" target="_blank"><img src="/button/beeps.gif" alt="beeps"></a>
 <a href="https://synth.download/" target="_blank"><img src="/button/synthdownload.gif" alt="synth.download"></a>
 <a href="https://proot.party/" target="_blank"><img src="/button/strongsand.gif" alt="strongsand"></a>

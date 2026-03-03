@@ -19,6 +19,6 @@
     <p>If you link to me, <a href="/guestbook">let me know</a>! Maybe I'll link back and we can be neighbours!</p>
 
     <h1>Cool Sites</h1>
-    <p>I liked these sites so I took them and put them here. they're mine now &gt;:3</p>
+    <p>I liked these site for one reason or another, so I've featured them here :3</p>
     <ButtonsCool></ButtonsCool>
 </section>

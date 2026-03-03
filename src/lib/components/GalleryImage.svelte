@@ -15,5 +15,5 @@
 <img width="100%" style="object-fit: cover;" src="/{gallery}/{character}/{slug}.{format}" alt="{alt}" />
 
 <button aria-label="Toggle format" onclick={toggle}>
-    <code>Toggle format (Currently .{format})</code>
+  Toggle format (Currently .{format})
 </button>

@@ -1,7 +1,9 @@
 <script>
   import "./style.css";
   import ButtonsMe from "$lib/components/ButtonsMe.svelte";
-
+  import Modal from "$lib/components/Modal.svelte";
+  
+	let showModal = $state(false);
   let { data, children } = $props();
 </script>
 
@@ -91,7 +93,7 @@
 
     <aside class="right-sidebar">
       <div class="sidebar-section">
-        <div class="sidebar-title">me, if you even care:</div>
+        <div class="sidebar-title">me btw, if you even care:</div>
         <img
           alt="site owner"
           class="full-width-image"
@@ -159,11 +161,8 @@
       <br />
       <div class="footer-content">
         <div>
-          Looking for me on the booooring modern web? <a
-            href="https://hiijax.com"
-          >
-            Click here ig...
-          </a>
+          Site by HiiJax | Code on <a href="https://git.hiijax.net/HiiJax/hiijax.net">Forgejo</a> | PMD Sprite
+          <button class="link-button" onclick={() => (showModal = true)}>Credits</button>.
         </div>
       </div>
     </footer>
@@ -174,3 +173,9 @@
     <img class="breo-floatie" src="/breotrans.webp" />
   </div>
 </div>
+
+<Modal bind:showModal>
+  <h1>PMD Sprite Credits</h1>
+  CHUNSOFT	<a href="https://www.spike-chunsoft.com/">https://www.spike-chunsoft.com/ </a><br>
+  Emmuffin	<a href="https://twitter.com/Ernmuffin">https://twitter.com/Ernmuffin </a> <br>
+</Modal>
