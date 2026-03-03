@@ -1,10 +1,9 @@
 <script>
   import "./style.css";
-  import CalmToggle from "$lib/components/CalmToggle.svelte";
-  import LightMode from "$lib/components/LightMode.svelte";
-  import DarkMode from "$lib/components/DarkMode.svelte";
   import ButtonsMe from "$lib/components/ButtonsMe.svelte";
-
+  import Modal from "$lib/components/Modal.svelte";
+  
+	let showModal = $state(false);
   let { data, children } = $props();
 </script>
 
@@ -15,7 +14,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <meta name="apple-mobile-web-app-title" content="hiijax.net" />
   <link rel="manifest" href="/site.webmanifest" />
-  <script src="/oneko.js" defer></script>
+  <title>HiiJax - VRC Creator & Internet Furry</title>
   <script>
     // Template generated with petrapixel's layout generator.
     // (Please do not remove this credit.)
@@ -27,18 +26,19 @@
       "It was also butchered by Jax, so take what you see with a grain of salt. What you see is NOT what you'll get lol",
     );
   </script>
+  <script src="/pmdneko.js" defer></script>
 </svelte:head>
 
 <a href="#content" id="skip-to-content-link">Skip to content</a>
 <div class="background-layout"></div>
-<!--
+
 <div class="bigger-layout">
-  
   <div class="floatie-holder">
-    <img class="nyx-floatie" src="nyxtrans.webp" />
+    <img class="nyx-floatie" src="/nyxtrans.webp" alt="nyx novabeast"/>
   </div>
-  -->
+
   <div class="layout">
+
     <!-- =============================================== -->
     <!-- HEADER -->
     <!-- =============================================== -->
@@ -51,21 +51,23 @@
           >
         </div>
         <div class="header-content">
-          <div class="header-title">Welcome to HiiJax's Homepage!!</div>
+          <div class="header-title">WELCOME! CHOOSE A PAGE:</div>
 
           <!-- NAVIGATION -->
           <nav>
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/guestbook">Guestbook</a></li>
-              <li><a href="/gallery">Art Gallery</a></li>
-              <li><a href="/links">Links</a></li>
-              <li>
-                <strong>More stuffs!</strong>
+              <li><a class="header-link" href="/links">[LINKS]</a></li>
+              <li><a class="header-link" href="/gallery">[GALLERY]</a></li>
+              <li><a class="header-link" href="/shop">[SHOP]</a></li>
+              <li><a class="header-link" href="/socials">[SOCIALS]</a></li>
+              <li class="header-link">
+                <strong>[MORE &darr;]</strong>
                 <ul>
-                  <li><a href="/my-tech">My Tech</a></li>
-                  <li><a href="/buttons">Buttons</a></li>
-                  <li><a href="/music">Music</a></li>
+                  <li><a class="header-link" href="/guestbook">GUESTBOOK</a></li>
+                  <li><a class="header-link" href="https://blog.hiijax.net">BLOG</a></li>
+                  <li><a class="header-link" href="/my-tech">MY TECH</a></li>
+                  <li><a class="header-link" href="/buttons">BUTTONS</a></li>
+                  <li><a class="header-link" href="/music">MUSIC</a></li>
                 </ul>
               </li>
             </ul>
@@ -73,9 +75,10 @@
         </div>
 
         <div class="header-controls">
-          <CalmToggle><code>Calmer Background</code></CalmToggle>
-          <LightMode><code>Light</code></LightMode>
-          <DarkMode><code>Dark</code></DarkMode>
+          <label class="toggle">
+            <input type="checkbox" class="floaty-checkbox" />
+            <span class="header-toggle">Hide Floaty Sonas</span>
+          </label>
         </div>
       </div>
     </header>
@@ -90,7 +93,7 @@
 
     <aside class="right-sidebar">
       <div class="sidebar-section">
-        <div class="sidebar-title">me, if you even care:</div>
+        <div class="sidebar-title">me btw, if you even care:</div>
         <img
           alt="site owner"
           class="full-width-image"
@@ -109,6 +112,7 @@
         <script
           type="text/javascript"
           src="https://www.counter12.com/ad.js?id=wbBAYC70aCDddAC9"
+          defer
         >
         </script>
       </div>
@@ -118,7 +122,7 @@
     </div>-->
       <hr />
       <div class="sidebar-section">
-        <div class="sidebar-title">buttonsss</div>
+        <div class="sidebar-title">buttonsss:</div>
         <a href="/buttons">
           <!-- svelte-ignore a11y_distracting_elements -->
           <marquee>
@@ -157,19 +161,21 @@
       <br />
       <div class="footer-content">
         <div>
-          Looking for me on the booooring modern web? <a
-            href="https://hiijax.com"
-          >
-            Click here ig...
-          </a>
+          Site by HiiJax | Code on <a href="https://git.hiijax.net/HiiJax/hiijax.net">Forgejo</a> | PMD Sprite
+          <button class="link-button" onclick={() => (showModal = true)}>Credits</button>
         </div>
       </div>
     </footer>
+
   </div>
-  <!--
+
   <div class="floatie-holder">
-    <img class="breo-floatie" src="breotrans.webp" />
+    <img class="breo-floatie" src="/breotrans.webp" alt="breo protogen"/>
   </div>
-  
 </div>
--->
+
+<Modal bind:showModal>
+  <h1>PMD Sprite Credits</h1>
+  CHUNSOFT	<a href="https://www.spike-chunsoft.com/">https://www.spike-chunsoft.com/ </a><br>
+  Emmuffin	<a href="https://twitter.com/Ernmuffin">https://twitter.com/Ernmuffin </a> <br>
+</Modal>

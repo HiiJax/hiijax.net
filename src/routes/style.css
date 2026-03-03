@@ -1,22 +1,23 @@
 @font-face {
-  font-family: 'Noto Sans';
-  src: url('/fonts/notosans.ttf');
-}
-
-@font-face {
   font-family: 'Noto Serif';
   src: url('/fonts/notoserif.ttf');
 }
 
 @font-face {
-  font-family: 'Cascadia Mono';
-  src: url('/fonts/cascadiamono.ttf');
+  font-family: 'KH Interference';
+  src: url('/fonts/khinterference.otf');
 }
 
 @font-face {
-  font-family: 'DejaVu Serif';
-  src: url('/fonts/dejavuserif.ttf');
+  font-family: 'PP Fraktion Sans';
+  src: url('/fonts/ppfraktionsans.otf');
 }
+
+@font-face {
+  font-family: 'PP Fraktion Mono';
+  src: url('/fonts/ppfraktionmono.otf');
+}
+
 
 /* -------------------------------------------------------- */
 /* VARIABLES */
@@ -25,7 +26,7 @@
 /* Variables are used like this: var(--text-color) */
 :root {
   /* Background Colors: */
-  --background-color: #000000;
+  --background-color: #5f2a9b;
   --content-background-color: #271e29ff;
   --sidebar-background-color: #271e29ff;
 
@@ -37,7 +38,8 @@
 
   /* Text: */
   --font: 'Noto Serif', serif;
-  --heading-font: 'Noto Sans', sans-serif;
+  --heading-font: 'PP Fraktion Sans', sans-serif;
+  --mono-font: 'PP Fraktion Mono', monospace;
   --font-size: 18px;
 
   /* Other Settings: */
@@ -46,13 +48,68 @@
   --border: 2px solid #bf87ff;
   --round-borders: 0px;
   --sidebar-width: 240px;
+
+  --shadow: 0px 0 5px #000000;
   
   scrollbar-gutter: stable;
 }
 
 code {
-  font-family: 'Cascadia Mono', monospace;
+  font-family: var(--mono-font);
 }
+
+button {
+  font-family: 'KH Interference';
+  border: var(--border);
+  cursor: pointer;
+  color: currentColor;
+  font-family: 'KH Interference', sans-serif;
+  font-size: 0.8rem;
+  background: var(--content-background-color);
+  padding: 10px 15px;
+  border: 2px solid var(--text-color);
+  white-space: nowrap; 
+  text-align: center;
+  width: 100%;
+}
+
+button:active, a:active, span:active {
+  scale: 0.95;
+}
+
+
+/* -------------------------------------------------------- */
+/* LANDING PAGE */
+/* -------------------------------------------------------- */
+
+/*
+.landing {
+  display: flex;
+  justify-content: center;
+}
+
+.button-link, .button-link:visited {
+  width: 100%;
+  text-decoration: none;
+  color: var(--text-color);
+  background-color: #AA5EDD;
+  border: 2px solid var(--text-color);
+  padding: var(--padding);
+  font-family: 'KH Interference', sans-serif;
+}
+
+.card {
+  margin: 20%;
+  padding: 30px;
+  background-color: var(--content-background-color);
+  color: var(--text-color);
+  box-shadow: var(--shadow);
+}
+
+.logo-holder {
+  width: 20%;
+}
+*/
 
 /* -------------------------------------------------------- */
 /* BASICS */
@@ -74,30 +131,31 @@ body {
   font-family: var(--font);
   line-height: 1.2;
   background: var(--background-color);
-  background-image: url("/background.webp");
+  background: linear-gradient(23deg, rgba(95, 42, 155, 1) 0%, rgba(195, 87, 199, 1) 54%, rgba(237, 221, 83, 1) 100%);
   background-attachment: fixed;
 }
 
+
 @media (prefers-color-scheme: light) {
   body {
-    --background-color: #f5f5f5;
-    --content-background-color: #ddadff;
-    --sidebar-background-color: #ddadff;
+    --background-color: #e173ff;
+    --content-background-color: #eacdff;
+    --sidebar-background-color: #eacdff;
 
     --text-color: #000000;
     --sidebar-text-color: #000000;
     --link-color: #7a3cff;
     --link-color-hover: #0099cc;
 
-    --border: 2px solid #6a00c7;
-
-    background-image: url("/background-light.webp");
+    --shadow: 0px 0 5px #00000078;
+    background: linear-gradient(23deg,rgba(225, 115, 255, 1) 0%, rgba(149, 138, 255, 1) 50%, rgba(130, 188, 255, 1) 100%);
+    background-attachment: fixed;
   }
-
 }
 
+/*
+
 body.dark-mode {
-    --background-color: #000000;
     --content-background-color: #271e29ff;
     --sidebar-background-color: #271e29ff;
     
@@ -105,14 +163,9 @@ body.dark-mode {
     --sidebar-text-color: #efefef;
     --link-color: #ffc926;
     --link-color-hover: #2ecdf4;
-    
-    --border: 2px solid #bf87ff;
-    
-    background-image: url("/background.webp");
   }
 
 body.light-mode {
-  --background-color: #f5f5f5;
   --content-background-color: #ddadff;
   --sidebar-background-color: #ddadff;
 
@@ -120,23 +173,8 @@ body.light-mode {
   --sidebar-text-color: #000000;
   --link-color: #7a3cff;
   --link-color-hover: #0099cc;
-
-  --border: 2px solid #6a00c7;
-
-  background-image: url("/background-light.webp");
 }
-
-@media (prefers-reduced-motion: reduce) {
-  body {
-    background: var(--background-color);
-    background-image: null;
-  }
-}
-
-body.calm {
-  background: var(--background-color);
-  background-image: null;
-}
+*/
 
 ::selection {
   /* (Text highlighted by the user) */
@@ -171,23 +209,71 @@ a:focus {
 /* -------------------------------------------------------- */
 
 
-/*
+
 .bigger-layout {
   width: 100%;
   display: grid;
-  grid-template: 
-    "breo-floatie layout nyx-floatie" auto;
+  grid-template-columns: 1fr auto 1fr; 
+  grid-template-areas: "breo-floatie layout nyx-floatie" auto;
 }
 
 .nyx-floatie {
   width: 90%;
   animation: float2 16s ease-in-out infinite;
+  filter: drop-shadow(-2px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
 .breo-floatie {
   width: 90%;
   animation: float 15s ease-in-out infinite;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
+
+body:has(.floaty-checkbox:checked) .breo-floatie,
+body:has(.floaty-checkbox:checked) .nyx-floatie {
+  visibility: hidden;
+}
+
+/* toggle for floaties*/
+
+.header-controls {
+  width: var(--sidebar-width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding);
+}
+
+@media (max-width: 1200px) {
+  .header-controls {
+    display: none;
+  }
+}
+
+.toggle {
+  cursor: pointer;
+  user-select: none;
+  font-family: 'KH Interference', sans-serif;
+  font-size: 0.8rem;
+}
+
+.toggle input {
+  display: none;
+}
+
+.header-toggle {
+  display: block;
+  padding: 10px 15px;
+  border: 2px solid var(--text-color);
+  white-space: nowrap; 
+  text-align: center;
+}
+
+.toggle input:checked + .header-toggle {
+  background-color: #AA5EDD;
+}
+
+/* layout cont. */
 
 .floatie-holder{
   display: flex;
@@ -201,10 +287,13 @@ a:focus {
 }
 
 @media (max-width: 1200px) {
-  .nyx-floatie {
+  .nyx-floatie, .breo-floatie {
     display: none;
   }
-  .breo-floatie {
+}
+
+@media (prefers-reduced-motion: true) {
+  .nyx-floatie, .breo-floatie {
     display: none;
   }
 }
@@ -233,10 +322,6 @@ a:focus {
   }
 }
 
-
-*/
-
-
 .layout {
   width: 1255px;
   display: grid;
@@ -244,7 +329,7 @@ a:focus {
   grid-template: 
     "announcement announcement" auto 
     "header header" auto 
-    "main rightSidebar" auto 
+    "main rightSidebar" 1fr 
     "footer footer" auto / auto var(--sidebar-width);
   /* Confused by the grid? Check out my tutorial: https://petrapixel.neocities.org/coding/positioning-tutorial#grid */
   position: relative;
@@ -268,8 +353,8 @@ main {
   overflow-y: auto;
   padding: var(--padding);
   background: var(--content-background-color);
-  border: var(--border);
   border-radius: var(--round-borders);
+  box-shadow: var(--shadow)
 }
 
 /* -------------------------------------------------------- */
@@ -279,6 +364,10 @@ main {
 header {
   grid-area: header;
   display: grid;
+}
+
+.header-title {
+  font-family: 'PP Fraktion Sans';
 }
 
 .header-gloss {
@@ -299,9 +388,8 @@ header {
 
 .header-inner {
   display: grid;
-
   font-size: 1.2em;
-  border: var(--border);
+  box-shadow: var(--shadow);
   border-radius: var(--round-borders);
   background: var(--content-background-color);
   grid-template-columns: var(--sidebar-width) 1fr var(--sidebar-width);
@@ -321,33 +409,38 @@ header {
 .header-link {
   max-height: 60px;
   height: 75%;
+  font-family: var(--mono-font);
+  text-decoration: none;
 }
 
 .header-logo {
   height: 100%;
+  transition: ease-in-out 0.1s;
+}
+
+.header-logo:hover {
+  scale: 1.1;
+  transition: ease-in-out 0.1s;
 }
 
 .header-content {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   padding-block: var(--padding);
 }
 
-.header-controls {
-  width: --sidebar-width;
-  padding: var(--padding);
-}
-
-button {
-  width: 100%;
-}
 
 .announcement {
   font-size: 1.2em;
   padding: var(--padding);
-  border: var(--border);
+  box-shadow: var(--shadow);
   border-radius: var(--round-borders);
   background: var(--content-background-color);
   margin-bottom: 10px;
 }
+
+
 
 /* -------------------------------------------------------- */
 /* SIDEBARS */
@@ -355,8 +448,8 @@ button {
 
 aside {
   grid-area: aside;
-  border: var(--border);
   border-radius: var(--round-borders);
+  box-shadow: var(--shadow);
   overflow: hidden;
   background: var(--sidebar-background-color);
   padding: var(--padding);
@@ -420,7 +513,7 @@ aside {
 }
 
 .site-button textarea {
-  font-family: monospace;
+  font-family: var(--mono-font);
   font-size: 0.7em;
 }
 
@@ -430,7 +523,7 @@ aside {
 
 footer {
   grid-area: footer;
-  border: var(--border);
+  box-shadow: var(--shadow);
   border-radius: var(--round-borders);
   overflow: hidden;
   font-size: 0.75em;
@@ -510,6 +603,7 @@ header nav ul {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  justify-content: center;
 }
 
 header nav ul li {
@@ -534,9 +628,8 @@ header nav ul ul {
   left: 10px;
   padding: 0.5em;
   z-index: 1;
-  border: var(--border);
   min-width: 100%;
-  box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+  box-shadow:  var(--shadow);
 }
 
 header nav ul li:hover ul,
@@ -546,7 +639,6 @@ header nav ul li:focus-within ul {
 
 header nav ul li strong {
   color: var(--link-color);
-  text-decoration: underline;
   font-weight: normal;
 }
 
@@ -765,6 +857,7 @@ main h6 {
   .layout {
     width: 100%;
     grid-template: "header" auto  "main" auto "rightSidebar" auto "footer" auto / 1fr;
+    padding-top: var(--margin);
     /* Confused by the grid? Check out my tutorial: https://petrapixel.neocities.org/coding/positioning-tutorial#grid */
   }
 
@@ -856,4 +949,41 @@ td {
   width: auto;
   height: auto;
   max-width: 100%;
+}
+
+.social-icon {
+  height: var(--font-size);
+  vertical-align: middle;
+}
+
+dialog {
+  background-color: var(--content-background-color);
+  color: var(--text-color);
+	max-width: 32em;
+	border: none;
+	padding: 0;
+  box-shadow: var(--shadow);
+}
+
+dialog > div {
+	padding: 1em;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  display: inline;
+  width: auto;
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+.link-button:hover,
+.link-button:focus {
+  color: var(--link-color-hover);
+  text-decoration: none;
 }

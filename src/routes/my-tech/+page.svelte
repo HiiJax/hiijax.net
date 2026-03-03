@@ -1,5 +1,4 @@
 <svelte:head>
-    <!-- Change your site title: (It is shown in the tab) -->
     <title>HiiJax's Tech</title>
 </svelte:head>
 
@@ -66,12 +65,12 @@
         <li>RAM: 2.5GB RAM</li>
         <li>3TB/mo bandwidth at 1Gbps</li>
         <li>
-            <a href="https://my.racknerd.com/aff.php?aff=18449&pid=924"
+            <a href="https://my.racknerd.com/aff.php?aff=18449&pid=924" target="_blank"
                 >Get the same VPS for just $18.66 per <strong>year</strong></a
             > (I get a kickback if you use this link :3)
         </li>
     </ul>
-    <a href="https://my.racknerd.com/aff.php?aff=18449"
+    <a href="https://my.racknerd.com/aff.php?aff=18449" target="_blank"
         ><img
             src="https://racknerd.com/banners/320x50.gif"
             alt="RackNerd Mobile Leaderboard Banner"
