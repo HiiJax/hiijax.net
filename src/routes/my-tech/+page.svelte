@@ -22,7 +22,7 @@
         <li>SSD: Samsung 970 Evo Plus 2TB NVMe</li>
         <li>PSU: DeepCool PK700D</li>
         <li>OS: Fedora Linux 43 (Workstation Edition)</li>
-        <a href="https://fedoraproject.org/" target="_blank"><img src="/button/fedora.gif" alt="Fedora"></a>
+        <a href="https://fedoraproject.org/" target="_blank"><img src="/buttons/fedora.gif" alt="Fedora"></a>
     </ul>
     <h3 id="laptop">Laptop</h3>
     <p>
@@ -36,7 +36,7 @@
         <li>SSD: SK.hynix 512GB NVMe</li>
         <li>RAM: 16GB DDR4</li>
         <li>OS: Fedora Linux 43 (Workstation Edition)</li>
-        <a href="https://fedoraproject.org/" target="_blank"><img src="/button/fedora2.gif" alt="Fedora"></a>
+        <a href="https://fedoraproject.org/" target="_blank"><img src="/buttons/fedora2.gif" alt="Fedora"></a>
     </ul>
     <h3 id="unraid-server">Unraid Server</h3>
     <p>
@@ -51,7 +51,7 @@
         <li>HDD: uhh ~52TB total storage space</li>
         <li>PSU: EVGA EVO B2 750W</li>
         <li>OS: Unraid 7</li>
-        <a href="https://unraid.net/" target="_blank"><img src="/button/unraid.gif" alt="Unraid"></a>
+        <a href="https://unraid.net/" target="_blank"><img src="/buttons/unraid.gif" alt="Unraid"></a>
     </ul>
     <h3 id="vps">VPS</h3>
     <p>

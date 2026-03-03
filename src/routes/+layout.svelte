@@ -34,7 +34,7 @@
 
 <div class="bigger-layout">
   <div class="floatie-holder">
-    <img class="nyx-floatie" src="/nyxtrans.webp" />
+    <img class="nyx-floatie" src="/nyxtrans.webp" alt="nyx novabeast"/>
   </div>
 
   <div class="layout">
@@ -66,7 +66,7 @@
                   <li><a class="header-link" href="/guestbook">GUESTBOOK</a></li>
                   <li><a class="header-link" href="https://blog.hiijax.net">BLOG</a></li>
                   <li><a class="header-link" href="/my-tech">MY TECH</a></li>
-                  <li><a class="header-link" href="/button">BUTTONS</a></li>
+                  <li><a class="header-link" href="/buttons">BUTTONS</a></li>
                   <li><a class="header-link" href="/music">MUSIC</a></li>
                 </ul>
               </li>
@@ -123,11 +123,11 @@
       <hr />
       <div class="sidebar-section">
         <div class="sidebar-title">buttonsss:</div>
-        <a href="/button">
+        <a href="/buttons">
           <!-- svelte-ignore a11y_distracting_elements -->
           <marquee>
             {#each data.buttonsShuffled as buttonsShuffled}
-              <img src={`/button/${buttonsShuffled}`} alt={buttonsShuffled} />
+              <img src={`/buttons/${buttonsShuffled}`} alt={buttonsShuffled} />
             {/each}
           </marquee>
         </a>
@@ -138,11 +138,11 @@
         <p>You can hotlink, I plan to update it!</p>
         <div class="site-button">
           <a href="https://hiijax.net/" target="_blank"
-            ><img src="/button/hiijax.gif" alt="HiiJax" /></a
+            ><img src="/buttons/hiijax.gif" alt="HiiJax" /></a
           >
           <textarea
             ><a href="https://hiijax.net/" target="_blank"><img
-            src="https://hiijax.net/button/hiijax.gif" alt="HiiJax"></a>
+            src="https://hiijax.net/buttons/hiijax.gif" alt="HiiJax"></a>
           </textarea>
         </div>
       </div>
@@ -162,7 +162,7 @@
       <div class="footer-content">
         <div>
           Site by HiiJax | Code on <a href="https://git.hiijax.net/HiiJax/hiijax.net">Forgejo</a> | PMD Sprite
-          <button class="link-button" onclick={() => (showModal = true)}>Credits</button>.
+          <button class="link-button" onclick={() => (showModal = true)}>Credits</button>
         </div>
       </div>
     </footer>
@@ -170,7 +170,7 @@
   </div>
 
   <div class="floatie-holder">
-    <img class="breo-floatie" src="/breotrans.webp" />
+    <img class="breo-floatie" src="/breotrans.webp" alt="breo protogen"/>
   </div>
 </div>
 

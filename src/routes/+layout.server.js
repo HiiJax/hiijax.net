@@ -3,10 +3,10 @@ import { readdir } from "fs/promises";
 import path from "path";
 
 export async function load() {
-    let buttonPath = path.resolve("public/button")
+    let buttonPath = path.resolve("public/buttons")
 
     if (dev) {
-        buttonPath = path.resolve("static/button");
+        buttonPath = path.resolve("static/buttons");
     } 
 
     const buttons = await readdir(buttonPath);
