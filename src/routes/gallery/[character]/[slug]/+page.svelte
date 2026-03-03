@@ -5,12 +5,24 @@
 </script>
 
 <svelte:head>
-    <title>HiiJax's Gallery - Art of {data.image.character} by {data.image.artist}</title>
-    <meta property="og:title" content="Art of {data.image.character} by {data.image.artist}" />
-    <meta property="og:description" content="HiiJax's Art Gallery" />
-    <meta property="og:type" content="image" />
-    <meta property="og:url" content="https://hiijax.net/gallery/{data.image.character}/{data.image.slug}" />
-    <meta property="og:image" content="https://hiijax.net/gallery/{data.image.character}/{data.image.slug}.webp" />
+  <title>HiiJax's Gallery - Art of {data.image.character} by {data.image.artist}</title>
+
+  <!-- og tags -->
+  <meta property="og:site_name" content="HiiJax's Gallery" />
+  <meta property="og:title" content="Art of {data.image.character} by {data.image.artist}" />
+  <meta property="og:description" content="Art of {data.image.character} by {data.image.artist}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hiijax.net/gallery/{data.image.character}/{data.image.slug}" />
+  <meta property="og:image:secure_url" content="https://hiijax.net/gallery/{data.image.character}/{data.image.slug}.jpg" />
+  <meta property="og:image" content="https://hiijax.net/gallery/{data.image.character}/{data.image.slug}.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:alt" content={data.image.alt} />
+
+  <!-- twitter card tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Art of {data.image.character} by {data.image.artist}" />
+  <meta name="twitter:description" content="Art of {data.image.character} by {data.image.artist}" />
+  <meta name="twitter:image" content="https://hiijax.net/gallery/{data.image.character}/{data.image.slug}.jpg" />
 </svelte:head>
 
 <a href="/gallery/{data.previousImage.character}/{data.previousImage.slug}" data-sveltekit-noscroll>&lAarr; Previous</a>

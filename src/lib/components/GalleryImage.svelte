@@ -1,9 +1,12 @@
 <script>
-    let { format = 'webp', gallery, character, slug, alt } = $props();
+    let { format = 'avif', gallery, character, slug, alt } = $props();
 
     function toggle() {
         if (format == "avif") {
             format = "webp";
+            return format;
+        } else if (format == "webp") {
+            format = "jpg";
             return format;
         } else {
             format = "avif";
