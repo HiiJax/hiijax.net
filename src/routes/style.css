@@ -131,7 +131,7 @@ body {
   font-family: var(--font);
   line-height: 1.2;
   background: var(--background-color);
-  background: linear-gradient(23deg, rgba(95, 42, 155, 1) 0%, rgba(195, 87, 199, 1) 54%, rgba(237, 221, 83, 1) 100%);
+  background: linear-gradient(23deg, rgba(95, 42, 155, 1) 0%, rgba(195, 87, 199, 1) 54%, rgb(255, 209, 83) 100%);
   background-attachment: fixed;
 }
 

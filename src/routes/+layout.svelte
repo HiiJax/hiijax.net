@@ -85,6 +85,12 @@
 
     <main id="content">
       {@render children()}
+
+      <Modal bind:showModal>
+        <h1>PMD Sprite Credits</h1>
+        CHUNSOFT	<a href="https://www.spike-chunsoft.com/">https://www.spike-chunsoft.com/ </a><br>
+        Emmuffin	<a href="https://twitter.com/Ernmuffin">https://twitter.com/Ernmuffin </a> <br>
+      </Modal>
     </main>
 
     <!-- =============================================== -->
@@ -166,16 +172,9 @@
         </div>
       </div>
     </footer>
-
   </div>
 
   <div class="floatie-holder">
     <img class="breo-floatie" src="/breotrans.webp" alt="breo protogen"/>
   </div>
 </div>
-
-<Modal bind:showModal>
-  <h1>PMD Sprite Credits</h1>
-  CHUNSOFT	<a href="https://www.spike-chunsoft.com/">https://www.spike-chunsoft.com/ </a><br>
-  Emmuffin	<a href="https://twitter.com/Ernmuffin">https://twitter.com/Ernmuffin </a> <br>
-</Modal>
