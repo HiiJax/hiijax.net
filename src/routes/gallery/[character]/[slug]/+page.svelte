@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Art of {data.image.character} by {data.image.artist}" />
   <meta name="twitter:description" content="Art of {data.image.character} by {data.image.artist}" />
-  <meta name="twitter:image" content="https://hiijax.net/gallery/{data.image.character}/{data.image.slug}.jpg" />
+  <meta name="twitter:image" content="https://hiijax.net/gallery/{data.image.character}/{data.image.slug}.webp" />
 </svelte:head>
 
 <a href="/gallery/{data.previousImage.character}/{data.previousImage.slug}" data-sveltekit-noscroll>&lAarr; Previous</a>
