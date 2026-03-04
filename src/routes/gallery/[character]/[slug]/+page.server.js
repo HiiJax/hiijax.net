@@ -1,21 +1,24 @@
 import { error } from '@sveltejs/kit';
-import { GALLERY_IMAGES } from "../../gallery";
+import { readFileSync } from 'fs';
 
 export function load({ params }) {
-    const image = GALLERY_IMAGES.find((image) => image.slug === params.slug);
+    /** @type {Array<{slug: string, character: string, artist: string, link: string, alt?: string}>} */
+    const gallery = JSON.parse(readFileSync('data/gallery.json', 'utf8'));
+
+    const image = gallery.find((image) => image.slug === params.slug);
 
     if (!image) error(404);
 
-    const currentIndex = GALLERY_IMAGES.findIndex((indexImage) => indexImage.slug === params.slug);
-  
+    const currentIndex = gallery.findIndex((indexImage) => indexImage.slug === params.slug);
+
     let previousImage = image;
     if (currentIndex > 0) {
-        previousImage = GALLERY_IMAGES[currentIndex - 1];
+        previousImage = gallery[currentIndex - 1];
     }
 
     let nextImage = image;
-    if (currentIndex < GALLERY_IMAGES.length - 1) {
-        nextImage = GALLERY_IMAGES[currentIndex + 1];
+    if (currentIndex < gallery.length - 1) {
+        nextImage = gallery[currentIndex + 1];
     }
 
     return {

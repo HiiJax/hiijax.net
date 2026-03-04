@@ -45,7 +45,7 @@ For testing a production build locally, use docker:
 docker build -t hiijax.net .
 
 # run the image
-docker run -v ./static:/app/public -p 3000:3000 hiijax.net
+docker run -v ./static:/app/public -v ./data:/app/data -p 3000:3000 hiijax.net
 ```
 
 Since this is just a personal website, Forgejo Actions automatically builds and overwrites the `:latest` tag in the container registry.
@@ -59,6 +59,7 @@ services:
     ports: '8080:3000'
     volumes:
       - ./public:/app/public
+      - ./data:/app/data
 ```
 
 ## Static Assets
@@ -69,11 +70,7 @@ In production, an [Express](https://expressjs.com/) server is used to dynamicall
 
 For development, `/static/` has been added to `.gitignore` so that you can provide the assets there, since they are also served at `/` by `npm run dev`
 
-Mostly a note to myself but the following command is handy to simply use the server's public folder in dev:
-```sh
-sudo mount -t cifs -o username=shareUsername //server/share/hiijax_net/public ./static
-```
-Possibly dangerous with git? :shrug:
+Files that only need to be accessed by the server, such as the gallery metadata, are stored in `/data`.
 
 ## Credits
 

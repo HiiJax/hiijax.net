@@ -1,10 +1,12 @@
-import { GALLERY_IMAGES } from "../gallery";
+import { readFileSync } from 'fs';
 
 export function load({ params }) {
-    const FILTERED_IMAGES = GALLERY_IMAGES.filter((image) => image.character === params.character);
+    /** @type {Array<{slug: string, character: string, artist: string, link: string, alt?: string}>} */
+    const gallery = JSON.parse(readFileSync('data/gallery.json', 'utf8'));
+    const filteredGallery = gallery.filter((image) => image.character === params.character);
 
     return {
-        previews: FILTERED_IMAGES.map((image) => ({
+        previews: filteredGallery.map((image) => ({
             slug: image.slug,
             character: image.character,
             artist: image.artist,
