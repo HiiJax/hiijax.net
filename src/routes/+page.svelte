@@ -36,8 +36,8 @@
         personalization (and maybe sparkles :3c), but for now, dis is what i got!!
     </p>
     <p>
-        This website is hosted on my own machine! You can see it's specs <a
-            href="/my-tech#unraid-server">here</a
+        This website is hosted on my own machine! You can see it's specs on <a
+            href="/my-tech#unraid-server"> my tech page</a
         >.
     </p>
 

@@ -93,7 +93,7 @@
       {@render children()}
 
       <Modal bind:showModal>
-        <h1>PMD Sprite Credits</h1>
+        <div class="modal-header">PMD Sprite Credits</div>
         CHUNSOFT	<a href="https://www.spike-chunsoft.com/">https://www.spike-chunsoft.com/ </a><br>
         Emmuffin	<a href="https://twitter.com/Ernmuffin">https://twitter.com/Ernmuffin </a> <br>
       </Modal>
