@@ -9,9 +9,10 @@
 
 <svelte:head>
   <meta name="author" content="HiiJax">
-  <meta name="description" content="Hii, I'm Jax! I make VRChat assets for furries and more. Surf my indie website!">
+  <meta name="description" content="Hii, I'm Jax! I'm a furry VRChat creator! You can see me around as my
+        sonas, Breo, an umbreon-protogen dude, or Nyx, a pretty fluffy dragon.">
   <meta name="theme-color" content="#aa5edd">
-  <meta property="og:site_name" content="HiiJax.net" />
+  <meta property="og:site_name" content="HiiJax" />
   <meta property="og:type" content="website" />
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -114,18 +115,7 @@
       <hr />
       <div class="sidebar-section">
         <div class="sidebar-title">hits:</div>
-        <a href="https://www.counter12.com">
-          <img
-            src="https://www.counter12.com/img-wbBAYC70aCDddAC9-6.gif"
-            alt="counter"
-          />
-        </a>
-        <script
-          type="text/javascript"
-          src="https://www.counter12.com/ad.js?id=wbBAYC70aCDddAC9"
-          defer
-        >
-        </script>
+        <div class="counter">{data.hits}</div>
       </div>
       <!--<hr />
     <div class="sidebar-section">

@@ -1,21 +1,25 @@
 @font-face {
   font-family: 'Noto Serif';
   src: url('/fonts/notoserif.ttf');
+  font-display: optional;
 }
 
 @font-face {
   font-family: 'KH Interference';
   src: url('/fonts/khinterference.otf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'PP Fraktion Sans';
   src: url('/fonts/ppfraktionsans.otf');
+  font-display: optional;
 }
 
 @font-face {
   font-family: 'PP Fraktion Mono';
   src: url('/fonts/ppfraktionmono.otf');
+  font-display: optional;
 }
 
 
@@ -59,7 +63,7 @@ code {
 }
 
 button {
-  font-family: 'KH Interference';
+  font-family: 'KH Interference', monospace;
   border: var(--border);
   cursor: pointer;
   color: currentColor;
@@ -367,7 +371,7 @@ header {
 }
 
 .header-title {
-  font-family: 'PP Fraktion Sans';
+  font-family: 'PP Fraktion Sans', sans-serif;
 }
 
 .header-gloss {
@@ -980,4 +984,9 @@ dialog > div {
 .link-button:focus {
   color: var(--link-color-hover);
   text-decoration: none;
+}
+
+.counter {
+  font-family: 'KH Interference', sans-serif;
+  font-size: 1.6em;
 }

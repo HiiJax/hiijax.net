@@ -1,19 +1,21 @@
 import { dev } from "$app/environment";
-import { readdir } from "fs/promises";
+import { readFile, writeFile, readdir } from "fs/promises";
 import path from "path";
 
 export async function load() {
+    let hits = Number(await readFile('data/hits', 'utf8'));
     let buttonPath = path.resolve("public/buttons")
-
     if (dev) {
         buttonPath = path.resolve("static/buttons");
     } 
 
+    // add a "hit" to the counter and write to the server file
+    hits += 1;
+    writeFile('data/hits', String(hits))
+
     const buttons = await readdir(buttonPath);
 
-    /**
-    * @param {string[]} array
-    */
+    /** @param {string[]} array */
     function shuffle(array) {
         const copy = [...array];
         let currentIndex = copy.length;
@@ -34,6 +36,7 @@ export async function load() {
     }
 
     return {
+        hits,
         buttons,
         buttonsShuffled: shuffle(buttons)
     };

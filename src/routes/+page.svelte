@@ -5,11 +5,20 @@
 <svelte:head>
   <title>HiiJax's Homepage</title>
   <meta property="og:title" content="HiiJax's Homepage" />
-  <meta property="og:description" content="Hii, I'm Jax! I make VRChat assets for furries and more. Surf my indie website!" />
+  <meta property="og:description" content="Hii, I'm Jax! I'm a furry VRChat creator! You can see me around as my
+        sonas, Breo, an umbreon-protogen dude, or Nyx, a pretty fluffy dragon." />
   <meta property="og:url" content="https://hiijax.net/" />
   <meta property="og:image:secure_url" content="https://hiijax.net/jax_profile.jpg" />
   <meta property="og:image" content="https://hiijax.net/jax_profile.jpg" />
   <meta property="og:image:type" content="image/jpeg" />
+  <script type="application/ld+json">
+    {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "HiiJax",
+      "url" : "https://hiijax.net/"
+    }
+  </script>
 </svelte:head>
 
 <section>
