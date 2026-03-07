@@ -20,6 +20,14 @@
     >!
 </p>
 <iframe
+    title="idaidaida II by ida deerz"
+    style="border: 0; width: 240px; height: 240px;"
+    src="https://bandcamp.com/EmbeddedPlayer/album=1771864992/size=large/bgcol=333333/linkcol=9a64ff/minimal=true/transparent=true/"
+    seamless
+    ><a href="https://idadeerz.bandcamp.com/album/idaidaida-ii"
+        >idaidaida II by ida deerz</a
+    ></iframe
+><iframe
     title="REACTOR by Femtanyl"
     style="border: 0; width: 240px; height: 240px;"
     src="https://bandcamp.com/EmbeddedPlayer/album=102534389/size=large/bgcol=333333/linkcol=9a64ff/minimal=true/transparent=true/"
