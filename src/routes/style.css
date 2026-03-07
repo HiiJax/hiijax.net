@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Noto Serif';
   src: url('/fonts/notoserif.ttf');
-  font-display: optional;
+  font-display: swap;
 }
 
 @font-face {
@@ -13,7 +13,7 @@
 @font-face {
   font-family: 'PP Fraktion Sans';
   src: url('/fonts/ppfraktionsans.otf');
-  font-display: optional;
+  font-display: swap;
 }
 
 @font-face {
@@ -989,4 +989,9 @@ dialog > div {
 .counter {
   font-family: 'KH Interference', sans-serif;
   font-size: 1.6em;
+}
+
+.modal-heading {
+  font-family: var(--heading-font);
+  font-size: 1.4em;
 }
