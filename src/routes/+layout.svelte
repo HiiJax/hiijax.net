@@ -112,10 +112,22 @@
           src="/jax_profile.webp"
         />
       </div>
+      <hr>
+      <div class="sidebar-section">
+        <div class="sidebar-title">webrings:</div>
+        <div class="footer-content">
+			    <div>
+			    	<a class="ring-link" href="https://protogen.chat/webring/hiijax.net/previous">&larr;</a>
+			    	<a class="ring-link" href="https://protogen.chat/webring">ProtogenRing</a>
+			    	<a class="ring-link" href="https://protogen.chat/webring/hiijax.net/next">&rarr;</a>
+			    </div>
+		    </div>
+      </div>
       <hr />
       <div class="sidebar-section">
         <div class="sidebar-title">hits:</div>
         <div class="counter">{data.hits}</div>
+        <div class="smol">(often totally broken)</div>
       </div>
       <!--<hr />
     <div class="sidebar-section">
