@@ -1,4 +1,4 @@
-<a href="https://beaus-silly-folder.neocities.org" target="_blank"><img src="/buttons/bsf.gif" alt="beau's silly folder"></a>
+<a href="https://beaus-silly-folder.nekoweb.org" target="_blank"><img src="/buttons/bsf.gif" alt="beau's silly folder"></a>
 <a href="https://deerz.one/" target="_blank"><img src="/buttons/deerzone.gif" alt="ida deerz"></a>
 <a href="https://beeps.website/" target="_blank"><img src="/buttons/beeps.gif" alt="beeps"></a>
 <a href="https://synth.download/" target="_blank"><img src="/buttons/synthdownload.gif" alt="synth.download"></a>
