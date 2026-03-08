@@ -11,7 +11,9 @@ export async function load() {
 
     // add a "hit" to the counter and write to the server file
     hits += 1;
-    writeFile('data/hits', String(hits))
+    if (hits > 1) {
+        writeFile('data/hits', String(hits))
+    }
 
     const buttons = await readdir(buttonPath);
 
