@@ -9,8 +9,6 @@
 
 <svelte:head>
   <meta name="author" content="HiiJax">
-  <meta name="description" content="Hii, I'm Jax! I'm a furry VRChat creator! You can see me around as my
-        sonas, Breo, an umbreon-protogen dude, or Nyx, a pretty fluffy dragon.">
   <meta name="theme-color" content="#aa5edd">
   <meta property="og:site_name" content="HiiJax" />
   <meta property="og:type" content="website" />

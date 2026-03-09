@@ -4,6 +4,8 @@
 </script>
 <svelte:head>
   <title>HiiJax's Homepage</title>
+  <meta name="description" content="Hii, I'm Jax! I'm a furry VRChat creator! You can see me around as my
+        sonas, Breo, an umbreon-protogen dude, or Nyx, a pretty fluffy dragon.">
   <meta property="og:title" content="HiiJax's Homepage" />
   <meta property="og:description" content="Hii, I'm Jax! I'm a furry VRChat creator! You can see me around as my
         sonas, Breo, an umbreon-protogen dude, or Nyx, a pretty fluffy dragon." />

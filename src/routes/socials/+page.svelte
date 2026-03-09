@@ -4,6 +4,7 @@
 </script>
 <svelte:head>
   <title>HiiJax's Socials</title>
+  <meta name="description" content="All of Jax's social media accounts.">
   <meta property="og:title" content="HiiJax's Socials" />
   <meta property="og:url" content="https://hiijax.net/socials" />
   <meta property="og:image:secure_url" content="https://hiijax.net/jax_profile.jpg" />

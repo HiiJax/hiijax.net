@@ -1,6 +1,7 @@
 <svelte:head>
   <title>HiiJax's Guestbook</title>
   <meta property="og:title" content="HiiJax's Guestbook" />
+  <meta name="description" content="Leave friendly messages, feedback, or a simple hello in Jax's Atabook guestbook.">
   <meta property="og:url" content="https://hiijax.net/guestbook" />
   <meta property="og:image:secure_url" content="https://hiijax.net/jax_profile.jpg" />
   <meta property="og:image" content="https://hiijax.net/jax_profile.jpg" />

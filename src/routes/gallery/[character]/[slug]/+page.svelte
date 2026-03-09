@@ -6,6 +6,7 @@
 
 <svelte:head>
   <title>HiiJax's Gallery - Art of {data.image.character} by {data.image.artist}</title>
+  <meta name="description" content="Art of {data.image.character} by {data.image.artist}">
 
   <!-- og tags -->
   <meta property="og:title" content="Art of {data.image.character} by {data.image.artist}" />

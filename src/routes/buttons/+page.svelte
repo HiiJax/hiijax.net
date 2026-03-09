@@ -10,6 +10,7 @@
 
 <svelte:head>
   <title>HiiJax's Button Index</title>
+  <meta name="description" content="A collection of all of the buttons used across hiijax.net">
   <meta property="og:title" content="HiiJax's Button Index" />
   <meta property="og:url" content="https://hiijax.net/buttons" />
   <meta property="og:image:secure_url" content="https://hiijax.net/buttons/hiijax.gif" />

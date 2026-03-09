@@ -1,5 +1,7 @@
 <svelte:head>
   <title>HiiJax's Tech</title>
+  <meta name="description" content="Technical specifications and details about Jax's regularly
+    used computers and tech.">
   <meta property="og:title" content="HiiJax's Tech" />
   <meta property="og:url" content="https://hiijax.net/my-tech" />
   <meta property="og:image:secure_url" content="https://hiijax.net/jax_profile.jpg" />

@@ -4,6 +4,7 @@
 
 <svelte:head>
   <title>HiiJax's Gallery</title>
+  <meta name="description" content="Browse digital art commissioned by or gifted to Jax.">
   <meta property="og:title" content="HiiJax's Gallery" />
   <meta property="og:url" content="https://hiijax.net/gallery" />
   <meta property="og:image:secure_url" content="https://hiijax.net/jax_profile.jpg" />

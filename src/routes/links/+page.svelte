@@ -6,6 +6,7 @@
 </script>
 <svelte:head>
   <title>HiiJax's Links</title>
+  <meta name="description" content="Links of websites that Jax thinks you should check out.">
   <meta property="og:title" content="HiiJax's Links" />
   <meta property="og:url" content="https://hiijax.net/links" />
   <meta property="og:image:secure_url" content="https://hiijax.net/jax_profile.jpg" />

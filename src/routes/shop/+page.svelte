@@ -1,5 +1,6 @@
 <svelte:head>
   <title>HiiJax's Shop</title>
+  <meta name="description" content="Shop for clothing for your furry VRChat avatars on Jax's store pages.">
   <meta property="og:title" content="HiiJax's Shop" />
   <meta property="og:url" content="https://hiijax.net/shop" />
   <meta property="og:image:secure_url" content="https://hiijax.net/jax_profile.jpg" />

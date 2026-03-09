@@ -1,5 +1,6 @@
 <svelte:head>
   <title>HiiJax's (Favourite) Music</title>
+  <meta name="description" content="Discover Jax's music tastes and favourite albums in their bandcamp collection.">
   <meta property="og:title" content="HiiJax's (Favourite) Music" />
   <meta property="og:url" content="https://hiijax.net/music" />
   <meta property="og:image:secure_url" content="https://hiijax.net/jax_profile.jpg" />
