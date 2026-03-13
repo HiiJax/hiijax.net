@@ -1,3 +1,4 @@
+<a href="https://protogen.chat" target="_blank"><img src="/buttons/protogen.gif" alt="protogen.chat"></a>
 <a href="https://beaus-silly-folder.nekoweb.org" target="_blank"><img src="/buttons/bsf.gif" alt="beau's silly folder"></a>
 <a href="https://deerz.one/" target="_blank"><img src="/buttons/deerzone.gif" alt="ida deerz"></a>
 <a href="https://beeps.website/" target="_blank"><img src="/buttons/beeps.gif" alt="beeps"></a>
